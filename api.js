@@ -14,7 +14,7 @@ export function fetchNotifications(user) {
     return axios.post(apiUrl, body)
       .then((response) => response.data)
       .catch((err) => {
-        console.error(`[EPNS-SDK] - API ${apiEndpoint}: `, err);
+        console.error(`[EPNS-SDK] - API `, err);
       });
 }
 
